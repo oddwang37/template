@@ -1,0 +1,25 @@
+.carousel
+    padding: 82px 0
+    &__wrapper
+        width: 790px
+        margin: 0 auto
+        position: relative
+        .carousel__item
+            img
+                animation: fadein 1s
+    .arrow-prev
+        position: absolute
+        top: 50%
+        transition: translateY(-50%)
+        left: -66px
+        cursor: pointer
+    .arrow-next
+        position: absolute
+        top: 50%
+        transition: translateY(-50%)
+        right: -66px
+        cursor: pointer
+
+@keyframes fadein 
+    from { opacity: 0; }
+    to   { opacity: 1; }
